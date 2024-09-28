@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  /* Base colors */
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /* Primary grays */
+  --color-gray-900: #121212; /* Background */
+  --color-gray-800: #1e1e1e; /* Surface */
+  --color-gray-700: #2a2a2a; /* Containers, cards */
+  --color-gray-600: #3a3a3a; /* Borders, subtle separators */
+  --color-gray-500: #4a4a4a; /* Input backgrounds */
+  --color-gray-400: #6b6b6b; /* Text on secondary areas */
+  --color-gray-300: #9e9e9e; /* Disabled text */
+  --color-gray-200: #bdbdbd; /* Placeholders */
+  --color-gray-100: #e0e0e0; /* Hover for darker elements */
+  --color-gray-50: #f5f5f5; /* Lightest elements */
+
+  /* Accent colors */
+  --color-accent-blue: #1e88e5; /* For interactive elements like buttons */
+  --color-accent-blue-hover: #1565c0; /* Hover state for accent */
+  --color-accent-green: #43a047; /* Success */
+  --color-accent-red: #e53935; /* Error */
+  --color-accent-yellow: #fdd835; /* Warnings */
+
+  /* Text colors */
+  --color-text-primary: #e0e0e0; /* Primary text on dark background */
+  --color-text-secondary: #bdbdbd; /* Secondary text */
+  --color-text-disabled: #9e9e9e; /* Disabled or less important text */
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background-color: var(--color-gray-900);
+}
+
+.main_title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent-blue);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background-color: var(--color-gray-800);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form .input-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-form .input-group label {
+  display: block;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.login-form .input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--color-gray-700);
+  border: none;
+  border-radius: 4px;
+  color: var(--color-text-primary);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--color-accent-blue);
+  border: none;
+  border-radius: 4px;
+  color: var(--color-white);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: var(--color-accent-blue-hover);
+}
